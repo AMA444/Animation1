@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animation</title>
+</head>
+<style>
+     .animation :hover {
+        animation-play-state: paused;
+        
+    }
+    .animation{
+        width: 300px;
+        height: 300px;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        line-height: 300px;
+        margin: -150px;
+        color: #03446A;
+        text-align: center;
+        font-size: 40px;
+        background-color: rgb(245, 236, 236);
+        box-shadow: 0 0 15px rgba(0, 0,0, 1);
+        animation-name: sample;
+        animation-duration: 2s;
+        animation-delay: 2s;
+        animation-timing-function: cubic-bezier(0.1, 1, 0.3, 0.6);
+        animation-iteration-count:infinite;
+       animation-direction:alternate;
+        animation-fill-mode: forwards;
+      /*animation: sample 2s infinite alternate;*/
+
+    }
+   
+    @keyframes sample{
+      0%{border-radius: 0%; }
+      25%{background-color: rgb(137, 230, 137);}
+      50%{background-color: rgb(246, 246, 118);}
+      100%{border-radius: 50%; background-color: tomato;color: rgb(13, 12, 12);}
+    }
+    </style>
+<body>
+    <div class="animation"> Muhammad </div>
+    
+</body>
+</html>
